@@ -1,4 +1,3 @@
-
 import os
 from flask import Flask, request, send_file, jsonify
 from PIL import Image, ImageDraw, ImageFont
