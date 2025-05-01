@@ -17,11 +17,11 @@ def home():
 
 @app.route('/upload', methods=['POST'])
 def upload():
-    image_file = request.files['product_image']
+    image_file = request.files['image_file']
     bg_style = request.form['bg_style']
     overlay_text = request.form.get('overlay_text', '')
     output_format = request.form['output_format']
-    logo_file = request.files.get('brand_logo')
+    logo_file = request.files.get('logo_file')
 
     # Set output size
     format_map = {
